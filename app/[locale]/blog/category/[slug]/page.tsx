@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { createClient } from '@/lib/supabase/server'
 import PostCard from '@/components/blog/PostCard'
 
@@ -9,6 +9,7 @@ export default async function CategoryPage({
   params: Promise<{ locale: string; slug: string }>
 }) {
   const { locale, slug } = await params
+  await setRequestLocale(locale)
   const t = await getTranslations()
   const supabase = await createClient()
 

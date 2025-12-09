@@ -19,6 +19,21 @@
     "loading": "Loading...",
     "error": "An error occurred",
     "back": "Back"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Welcome to my personal brand website! I share experiences about travel, technology, and artificial intelligence."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with me through the following channels."
+  },
+  "home": {
+    "title": "Welcome to Hieu Solutions",
+    "subtitle": "Personal brand website sharing experiences about travel, technology, and AI",
+    "categories": "Categories",
+    "featured_posts": "Featured Posts",
+    "view_all": "View All"
   }
 }
 

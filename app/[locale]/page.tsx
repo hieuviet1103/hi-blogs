@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import PostCard from '@/components/blog/PostCard'
@@ -11,6 +11,7 @@ export default async function HomePage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
+  await setRequestLocale(locale)
   const t = await getTranslations()
   const supabase = await createClient()
 

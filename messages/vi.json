@@ -19,6 +19,21 @@
     "loading": "Đang tải...",
     "error": "Có lỗi xảy ra",
     "back": "Quay lại"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "description": "Chào mừng đến với website thương hiệu cá nhân của tôi! Tôi chia sẻ những trải nghiệm về du lịch, công nghệ và trí tuệ nhân tạo."
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "description": "Hãy liên hệ với tôi qua các kênh sau."
+  },
+  "home": {
+    "title": "Chào mừng đến với Hieu Solutions",
+    "subtitle": "Website thương hiệu cá nhân chia sẻ trải nghiệm về du lịch, công nghệ và AI",
+    "categories": "Danh mục",
+    "featured_posts": "Bài viết nổi bật",
+    "view_all": "Xem tất cả"
   }
 }
 

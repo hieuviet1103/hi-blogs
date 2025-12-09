@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 export default async function ContactPage({
   params,
@@ -6,6 +6,7 @@ export default async function ContactPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
+  await setRequestLocale(locale)
   const t = await getTranslations()
 
   return (

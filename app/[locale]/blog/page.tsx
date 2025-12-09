@@ -1,6 +1,8 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { createClient } from '@/lib/supabase/server'
 import PostCard from '@/components/blog/PostCard'
+
+export const dynamic = 'force-dynamic'
 
 export default async function BlogPage({
   params,
@@ -11,6 +13,7 @@ export default async function BlogPage({
 }) {
   const { locale } = await params
   const { page = '1', category, tag } = await searchParams
+  await setRequestLocale(locale)
   const t = await getTranslations()
   const supabase = await createClient()
 
