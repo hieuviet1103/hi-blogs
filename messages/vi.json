@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "blog": "Blog",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "blog": {
+    "read_more": "Đọc thêm",
+    "published_on": "Đăng vào",
+    "author": "Tác giả",
+    "categories": "Danh mục",
+    "tags": "Thẻ",
+    "related_posts": "Bài viết liên quan",
+    "no_posts": "Chưa có bài viết nào",
+    "all_posts": "Tất cả bài viết"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Có lỗi xảy ra",
+    "back": "Quay lại"
+  }
+}
+
